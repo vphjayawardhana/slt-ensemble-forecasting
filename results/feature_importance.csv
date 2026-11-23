@@ -1,0 +1,213 @@
+approach,model,feature,importance_type,importance
+return,Random Forest (Bagging),close_lag1_ratio,"built-in (RF: impurity, XGB: gain)",0.033713409095620074
+return,Random Forest (Bagging),close_lag2_ratio,"built-in (RF: impurity, XGB: gain)",0.014453912259369022
+return,Random Forest (Bagging),close_lag3_ratio,"built-in (RF: impurity, XGB: gain)",0.008731680868796683
+return,Random Forest (Bagging),close_lag5_ratio,"built-in (RF: impurity, XGB: gain)",0.013990780109377139
+return,Random Forest (Bagging),close_lag10_ratio,"built-in (RF: impurity, XGB: gain)",0.006140523943491583
+return,Random Forest (Bagging),close_lag20_ratio,"built-in (RF: impurity, XGB: gain)",0.002965676068580466
+return,Random Forest (Bagging),close_over_ma5,"built-in (RF: impurity, XGB: gain)",0.2847861899001428
+return,Random Forest (Bagging),close_over_ma10,"built-in (RF: impurity, XGB: gain)",0.05108474650584557
+return,Random Forest (Bagging),close_over_ma20,"built-in (RF: impurity, XGB: gain)",0.018003965291138378
+return,Random Forest (Bagging),log_ret_lag0,"built-in (RF: impurity, XGB: gain)",0.01623392183440334
+return,Random Forest (Bagging),log_ret_lag1,"built-in (RF: impurity, XGB: gain)",0.00215626381597682
+return,Random Forest (Bagging),log_ret_lag2,"built-in (RF: impurity, XGB: gain)",0.0025075949369603393
+return,Random Forest (Bagging),log_ret_lag3,"built-in (RF: impurity, XGB: gain)",0.0049066336187773545
+return,Random Forest (Bagging),log_ret_lag4,"built-in (RF: impurity, XGB: gain)",0.0012165946128362014
+return,Random Forest (Bagging),volatility_5,"built-in (RF: impurity, XGB: gain)",0.00722842857573667
+return,Random Forest (Bagging),volatility_20,"built-in (RF: impurity, XGB: gain)",0.012080629105025834
+return,Random Forest (Bagging),open_over_close,"built-in (RF: impurity, XGB: gain)",0.008147393124427964
+return,Random Forest (Bagging),high_over_close,"built-in (RF: impurity, XGB: gain)",0.3021106989631114
+return,Random Forest (Bagging),low_over_close,"built-in (RF: impurity, XGB: gain)",0.0728537134618813
+return,Random Forest (Bagging),hl_range_over_close,"built-in (RF: impurity, XGB: gain)",0.026770842012631486
+return,Random Forest (Bagging),log_volume,"built-in (RF: impurity, XGB: gain)",0.06454433135351297
+return,Random Forest (Bagging),volume_missing,"built-in (RF: impurity, XGB: gain)",0.0
+return,Random Forest (Bagging),volume_over_ma20,"built-in (RF: impurity, XGB: gain)",0.02059737871070893
+return,Random Forest (Bagging),change_pct,"built-in (RF: impurity, XGB: gain)",0.022512850265947265
+return,Random Forest (Bagging),day_of_week,"built-in (RF: impurity, XGB: gain)",0.0005123950756474304
+return,Random Forest (Bagging),month,"built-in (RF: impurity, XGB: gain)",0.0017494464900530199
+return,Random Forest (Bagging),close_lag1_ratio,"permutation (validation, rise in MSE)",-9.007919975184253e-08
+return,Random Forest (Bagging),close_lag2_ratio,"permutation (validation, rise in MSE)",2.26665944181323e-07
+return,Random Forest (Bagging),close_lag3_ratio,"permutation (validation, rise in MSE)",2.5900612693745706e-08
+return,Random Forest (Bagging),close_lag5_ratio,"permutation (validation, rise in MSE)",-3.459132094849526e-07
+return,Random Forest (Bagging),close_lag10_ratio,"permutation (validation, rise in MSE)",1.4143649375003953e-07
+return,Random Forest (Bagging),close_lag20_ratio,"permutation (validation, rise in MSE)",7.840654775145622e-08
+return,Random Forest (Bagging),close_over_ma5,"permutation (validation, rise in MSE)",1.62660939146278e-05
+return,Random Forest (Bagging),close_over_ma10,"permutation (validation, rise in MSE)",2.1857957607462743e-06
+return,Random Forest (Bagging),close_over_ma20,"permutation (validation, rise in MSE)",7.730321436489034e-07
+return,Random Forest (Bagging),log_ret_lag0,"permutation (validation, rise in MSE)",8.311539173180924e-08
+return,Random Forest (Bagging),log_ret_lag1,"permutation (validation, rise in MSE)",-1.2543255383575674e-08
+return,Random Forest (Bagging),log_ret_lag2,"permutation (validation, rise in MSE)",-1.4550264623035182e-07
+return,Random Forest (Bagging),log_ret_lag3,"permutation (validation, rise in MSE)",-2.5493601441924825e-07
+return,Random Forest (Bagging),log_ret_lag4,"permutation (validation, rise in MSE)",-3.687872641975655e-08
+return,Random Forest (Bagging),volatility_5,"permutation (validation, rise in MSE)",1.0220306357459387e-07
+return,Random Forest (Bagging),volatility_20,"permutation (validation, rise in MSE)",9.91545517056052e-07
+return,Random Forest (Bagging),open_over_close,"permutation (validation, rise in MSE)",4.3196182840199265e-07
+return,Random Forest (Bagging),high_over_close,"permutation (validation, rise in MSE)",1.688785803235284e-05
+return,Random Forest (Bagging),low_over_close,"permutation (validation, rise in MSE)",4.520140689432263e-06
+return,Random Forest (Bagging),hl_range_over_close,"permutation (validation, rise in MSE)",2.607063662742439e-06
+return,Random Forest (Bagging),log_volume,"permutation (validation, rise in MSE)",8.979379547541721e-07
+return,Random Forest (Bagging),volume_missing,"permutation (validation, rise in MSE)",-2.168404344971009e-20
+return,Random Forest (Bagging),volume_over_ma20,"permutation (validation, rise in MSE)",3.4391206065583153e-07
+return,Random Forest (Bagging),change_pct,"permutation (validation, rise in MSE)",-7.240379744625656e-08
+return,Random Forest (Bagging),day_of_week,"permutation (validation, rise in MSE)",3.005817316760213e-08
+return,Random Forest (Bagging),month,"permutation (validation, rise in MSE)",3.989551882205983e-08
+return,XGBoost (Boosting),close_lag1_ratio,"built-in (RF: impurity, XGB: gain)",0.07025868445634842
+return,XGBoost (Boosting),close_lag2_ratio,"built-in (RF: impurity, XGB: gain)",0.03422597423195839
+return,XGBoost (Boosting),close_lag3_ratio,"built-in (RF: impurity, XGB: gain)",0.03464863821864128
+return,XGBoost (Boosting),close_lag5_ratio,"built-in (RF: impurity, XGB: gain)",0.03219613805413246
+return,XGBoost (Boosting),close_lag10_ratio,"built-in (RF: impurity, XGB: gain)",0.025433331727981567
+return,XGBoost (Boosting),close_lag20_ratio,"built-in (RF: impurity, XGB: gain)",0.033497776836156845
+return,XGBoost (Boosting),close_over_ma5,"built-in (RF: impurity, XGB: gain)",0.08715284615755081
+return,XGBoost (Boosting),close_over_ma10,"built-in (RF: impurity, XGB: gain)",0.03830215334892273
+return,XGBoost (Boosting),close_over_ma20,"built-in (RF: impurity, XGB: gain)",0.030031519010663033
+return,XGBoost (Boosting),log_ret_lag0,"built-in (RF: impurity, XGB: gain)",0.05750070884823799
+return,XGBoost (Boosting),log_ret_lag1,"built-in (RF: impurity, XGB: gain)",0.03006632812321186
+return,XGBoost (Boosting),log_ret_lag2,"built-in (RF: impurity, XGB: gain)",0.02655121311545372
+return,XGBoost (Boosting),log_ret_lag3,"built-in (RF: impurity, XGB: gain)",0.02783357724547386
+return,XGBoost (Boosting),log_ret_lag4,"built-in (RF: impurity, XGB: gain)",0.02988387830555439
+return,XGBoost (Boosting),volatility_5,"built-in (RF: impurity, XGB: gain)",0.029820077121257782
+return,XGBoost (Boosting),volatility_20,"built-in (RF: impurity, XGB: gain)",0.0243642907589674
+return,XGBoost (Boosting),open_over_close,"built-in (RF: impurity, XGB: gain)",0.030165430158376694
+return,XGBoost (Boosting),high_over_close,"built-in (RF: impurity, XGB: gain)",0.09273303300142288
+return,XGBoost (Boosting),low_over_close,"built-in (RF: impurity, XGB: gain)",0.046407707035541534
+return,XGBoost (Boosting),hl_range_over_close,"built-in (RF: impurity, XGB: gain)",0.04013639688491821
+return,XGBoost (Boosting),log_volume,"built-in (RF: impurity, XGB: gain)",0.04229050502181053
+return,XGBoost (Boosting),volume_missing,"built-in (RF: impurity, XGB: gain)",0.019580604508519173
+return,XGBoost (Boosting),volume_over_ma20,"built-in (RF: impurity, XGB: gain)",0.03212016448378563
+return,XGBoost (Boosting),change_pct,"built-in (RF: impurity, XGB: gain)",0.034451235085725784
+return,XGBoost (Boosting),day_of_week,"built-in (RF: impurity, XGB: gain)",0.029521161690354347
+return,XGBoost (Boosting),month,"built-in (RF: impurity, XGB: gain)",0.020826587453484535
+return,XGBoost (Boosting),close_lag1_ratio,"permutation (validation, rise in MSE)",-5.082231179985032e-06
+return,XGBoost (Boosting),close_lag2_ratio,"permutation (validation, rise in MSE)",-2.8366487474565643e-06
+return,XGBoost (Boosting),close_lag3_ratio,"permutation (validation, rise in MSE)",-1.0217519439258832e-06
+return,XGBoost (Boosting),close_lag5_ratio,"permutation (validation, rise in MSE)",-1.0899022702789063e-06
+return,XGBoost (Boosting),close_lag10_ratio,"permutation (validation, rise in MSE)",5.641078977161194e-06
+return,XGBoost (Boosting),close_lag20_ratio,"permutation (validation, rise in MSE)",1.2311933985782058e-05
+return,XGBoost (Boosting),close_over_ma5,"permutation (validation, rise in MSE)",5.462060590064889e-07
+return,XGBoost (Boosting),close_over_ma10,"permutation (validation, rise in MSE)",3.027035317423074e-06
+return,XGBoost (Boosting),close_over_ma20,"permutation (validation, rise in MSE)",5.637821309015809e-06
+return,XGBoost (Boosting),log_ret_lag0,"permutation (validation, rise in MSE)",-4.604337361450756e-06
+return,XGBoost (Boosting),log_ret_lag1,"permutation (validation, rise in MSE)",7.191269961553037e-07
+return,XGBoost (Boosting),log_ret_lag2,"permutation (validation, rise in MSE)",4.351811599227231e-06
+return,XGBoost (Boosting),log_ret_lag3,"permutation (validation, rise in MSE)",5.018018645215085e-06
+return,XGBoost (Boosting),log_ret_lag4,"permutation (validation, rise in MSE)",-2.4835595102406117e-06
+return,XGBoost (Boosting),volatility_5,"permutation (validation, rise in MSE)",4.433508093953909e-06
+return,XGBoost (Boosting),volatility_20,"permutation (validation, rise in MSE)",5.389986557934859e-06
+return,XGBoost (Boosting),open_over_close,"permutation (validation, rise in MSE)",8.097432360166211e-07
+return,XGBoost (Boosting),high_over_close,"permutation (validation, rise in MSE)",4.684184744786172e-06
+return,XGBoost (Boosting),low_over_close,"permutation (validation, rise in MSE)",1.857029070352138e-05
+return,XGBoost (Boosting),hl_range_over_close,"permutation (validation, rise in MSE)",1.743866150361842e-06
+return,XGBoost (Boosting),log_volume,"permutation (validation, rise in MSE)",3.5374342231051134e-06
+return,XGBoost (Boosting),volume_missing,"permutation (validation, rise in MSE)",0.0
+return,XGBoost (Boosting),volume_over_ma20,"permutation (validation, rise in MSE)",1.8550703272394737e-06
+return,XGBoost (Boosting),change_pct,"permutation (validation, rise in MSE)",1.923987715436368e-06
+return,XGBoost (Boosting),day_of_week,"permutation (validation, rise in MSE)",8.318287125994744e-06
+return,XGBoost (Boosting),month,"permutation (validation, rise in MSE)",7.60370676871399e-07
+rawprice,Random Forest (Bagging),close_t,"built-in (RF: impurity, XGB: gain)",0.19875492410524376
+rawprice,Random Forest (Bagging),price_lag1,"built-in (RF: impurity, XGB: gain)",0.11411327986118391
+rawprice,Random Forest (Bagging),price_lag2,"built-in (RF: impurity, XGB: gain)",0.06198489959226865
+rawprice,Random Forest (Bagging),price_lag3,"built-in (RF: impurity, XGB: gain)",0.04491805892028723
+rawprice,Random Forest (Bagging),price_lag5,"built-in (RF: impurity, XGB: gain)",0.03427776208470588
+rawprice,Random Forest (Bagging),price_lag10,"built-in (RF: impurity, XGB: gain)",0.014804181380383488
+rawprice,Random Forest (Bagging),price_lag20,"built-in (RF: impurity, XGB: gain)",0.009756626560188454
+rawprice,Random Forest (Bagging),ma5,"built-in (RF: impurity, XGB: gain)",0.11763465911882667
+rawprice,Random Forest (Bagging),ma10,"built-in (RF: impurity, XGB: gain)",0.0522410118970377
+rawprice,Random Forest (Bagging),ma20,"built-in (RF: impurity, XGB: gain)",0.04328236012953144
+rawprice,Random Forest (Bagging),open,"built-in (RF: impurity, XGB: gain)",0.07246894003228911
+rawprice,Random Forest (Bagging),high,"built-in (RF: impurity, XGB: gain)",0.12406543957474288
+rawprice,Random Forest (Bagging),low,"built-in (RF: impurity, XGB: gain)",0.10438876804861144
+rawprice,Random Forest (Bagging),hl_range,"built-in (RF: impurity, XGB: gain)",0.0015521385944959492
+rawprice,Random Forest (Bagging),log_ret_lag0,"built-in (RF: impurity, XGB: gain)",0.0004109992836120117
+rawprice,Random Forest (Bagging),log_ret_lag1,"built-in (RF: impurity, XGB: gain)",0.0002126983515982569
+rawprice,Random Forest (Bagging),log_ret_lag2,"built-in (RF: impurity, XGB: gain)",0.00016790394994826188
+rawprice,Random Forest (Bagging),log_ret_lag3,"built-in (RF: impurity, XGB: gain)",0.00017690707750528414
+rawprice,Random Forest (Bagging),log_ret_lag4,"built-in (RF: impurity, XGB: gain)",0.00017252683017962925
+rawprice,Random Forest (Bagging),volatility_5,"built-in (RF: impurity, XGB: gain)",0.00042231995233747705
+rawprice,Random Forest (Bagging),volatility_20,"built-in (RF: impurity, XGB: gain)",0.0009928793766352776
+rawprice,Random Forest (Bagging),log_volume,"built-in (RF: impurity, XGB: gain)",0.0018442513201173858
+rawprice,Random Forest (Bagging),volume_missing,"built-in (RF: impurity, XGB: gain)",4.4711939359118206e-07
+rawprice,Random Forest (Bagging),volume_over_ma20,"built-in (RF: impurity, XGB: gain)",0.0003194523203707461
+rawprice,Random Forest (Bagging),change_pct,"built-in (RF: impurity, XGB: gain)",0.00043616379609748426
+rawprice,Random Forest (Bagging),day_of_week,"built-in (RF: impurity, XGB: gain)",6.810641975168715e-05
+rawprice,Random Forest (Bagging),month,"built-in (RF: impurity, XGB: gain)",0.0005322943026565588
+rawprice,Random Forest (Bagging),close_t,"permutation (validation, rise in MSE)",0.6285759038100229
+rawprice,Random Forest (Bagging),price_lag1,"permutation (validation, rise in MSE)",0.25308479944884626
+rawprice,Random Forest (Bagging),price_lag2,"permutation (validation, rise in MSE)",0.040275653619248855
+rawprice,Random Forest (Bagging),price_lag3,"permutation (validation, rise in MSE)",0.042176930456007254
+rawprice,Random Forest (Bagging),price_lag5,"permutation (validation, rise in MSE)",0.011706072456787685
+rawprice,Random Forest (Bagging),price_lag10,"permutation (validation, rise in MSE)",0.001585135903318835
+rawprice,Random Forest (Bagging),price_lag20,"permutation (validation, rise in MSE)",-0.008008761670548037
+rawprice,Random Forest (Bagging),ma5,"permutation (validation, rise in MSE)",0.5848434461651933
+rawprice,Random Forest (Bagging),ma10,"permutation (validation, rise in MSE)",0.44152664872403413
+rawprice,Random Forest (Bagging),ma20,"permutation (validation, rise in MSE)",0.3248204273917358
+rawprice,Random Forest (Bagging),open,"permutation (validation, rise in MSE)",0.13559294909175668
+rawprice,Random Forest (Bagging),high,"permutation (validation, rise in MSE)",0.413718382701036
+rawprice,Random Forest (Bagging),low,"permutation (validation, rise in MSE)",0.2716314527028113
+rawprice,Random Forest (Bagging),hl_range,"permutation (validation, rise in MSE)",-0.0014611302689228945
+rawprice,Random Forest (Bagging),log_ret_lag0,"permutation (validation, rise in MSE)",0.005001617304364015
+rawprice,Random Forest (Bagging),log_ret_lag1,"permutation (validation, rise in MSE)",0.0004757017264769292
+rawprice,Random Forest (Bagging),log_ret_lag2,"permutation (validation, rise in MSE)",0.0005908329317694027
+rawprice,Random Forest (Bagging),log_ret_lag3,"permutation (validation, rise in MSE)",0.00086410901340086
+rawprice,Random Forest (Bagging),log_ret_lag4,"permutation (validation, rise in MSE)",-0.0013533383489029993
+rawprice,Random Forest (Bagging),volatility_5,"permutation (validation, rise in MSE)",-0.002028240557547356
+rawprice,Random Forest (Bagging),volatility_20,"permutation (validation, rise in MSE)",-0.00207701914586933
+rawprice,Random Forest (Bagging),log_volume,"permutation (validation, rise in MSE)",0.0005217228302761168
+rawprice,Random Forest (Bagging),volume_missing,"permutation (validation, rise in MSE)",2.220446049250313e-16
+rawprice,Random Forest (Bagging),volume_over_ma20,"permutation (validation, rise in MSE)",-0.0020411795610705053
+rawprice,Random Forest (Bagging),change_pct,"permutation (validation, rise in MSE)",0.008097562842630834
+rawprice,Random Forest (Bagging),day_of_week,"permutation (validation, rise in MSE)",0.0005720985709104399
+rawprice,Random Forest (Bagging),month,"permutation (validation, rise in MSE)",0.002944964674994455
+rawprice,XGBoost (Boosting),close_t,"built-in (RF: impurity, XGB: gain)",0.19710122048854828
+rawprice,XGBoost (Boosting),price_lag1,"built-in (RF: impurity, XGB: gain)",0.04652348905801773
+rawprice,XGBoost (Boosting),price_lag2,"built-in (RF: impurity, XGB: gain)",0.0348956435918808
+rawprice,XGBoost (Boosting),price_lag3,"built-in (RF: impurity, XGB: gain)",0.018761690706014633
+rawprice,XGBoost (Boosting),price_lag5,"built-in (RF: impurity, XGB: gain)",0.0027779473457485437
+rawprice,XGBoost (Boosting),price_lag10,"built-in (RF: impurity, XGB: gain)",0.004592277575284243
+rawprice,XGBoost (Boosting),price_lag20,"built-in (RF: impurity, XGB: gain)",0.0011930029140785336
+rawprice,XGBoost (Boosting),ma5,"built-in (RF: impurity, XGB: gain)",0.1356242299079895
+rawprice,XGBoost (Boosting),ma10,"built-in (RF: impurity, XGB: gain)",0.03858712315559387
+rawprice,XGBoost (Boosting),ma20,"built-in (RF: impurity, XGB: gain)",0.06525858491659164
+rawprice,XGBoost (Boosting),open,"built-in (RF: impurity, XGB: gain)",0.06560572236776352
+rawprice,XGBoost (Boosting),high,"built-in (RF: impurity, XGB: gain)",0.2824089527130127
+rawprice,XGBoost (Boosting),low,"built-in (RF: impurity, XGB: gain)",0.10206373780965805
+rawprice,XGBoost (Boosting),hl_range,"built-in (RF: impurity, XGB: gain)",0.0003108245728071779
+rawprice,XGBoost (Boosting),log_ret_lag0,"built-in (RF: impurity, XGB: gain)",0.0003298431111034006
+rawprice,XGBoost (Boosting),log_ret_lag1,"built-in (RF: impurity, XGB: gain)",0.00027617200976237655
+rawprice,XGBoost (Boosting),log_ret_lag2,"built-in (RF: impurity, XGB: gain)",0.0002212882973253727
+rawprice,XGBoost (Boosting),log_ret_lag3,"built-in (RF: impurity, XGB: gain)",0.0002776016772259027
+rawprice,XGBoost (Boosting),log_ret_lag4,"built-in (RF: impurity, XGB: gain)",0.0002567849587649107
+rawprice,XGBoost (Boosting),volatility_5,"built-in (RF: impurity, XGB: gain)",0.0003139192995149642
+rawprice,XGBoost (Boosting),volatility_20,"built-in (RF: impurity, XGB: gain)",0.0007013143040239811
+rawprice,XGBoost (Boosting),log_volume,"built-in (RF: impurity, XGB: gain)",0.0004727793566416949
+rawprice,XGBoost (Boosting),volume_missing,"built-in (RF: impurity, XGB: gain)",0.0
+rawprice,XGBoost (Boosting),volume_over_ma20,"built-in (RF: impurity, XGB: gain)",0.00028997266781516373
+rawprice,XGBoost (Boosting),change_pct,"built-in (RF: impurity, XGB: gain)",0.0002875413920264691
+rawprice,XGBoost (Boosting),day_of_week,"built-in (RF: impurity, XGB: gain)",0.00035626551834866405
+rawprice,XGBoost (Boosting),month,"built-in (RF: impurity, XGB: gain)",0.0005119803827255964
+rawprice,XGBoost (Boosting),close_t,"permutation (validation, rise in MSE)",2.699954557999739
+rawprice,XGBoost (Boosting),price_lag1,"permutation (validation, rise in MSE)",0.040753557615835934
+rawprice,XGBoost (Boosting),price_lag2,"permutation (validation, rise in MSE)",0.018173198108503298
+rawprice,XGBoost (Boosting),price_lag3,"permutation (validation, rise in MSE)",0.012432463022735828
+rawprice,XGBoost (Boosting),price_lag5,"permutation (validation, rise in MSE)",-0.0036909665140612558
+rawprice,XGBoost (Boosting),price_lag10,"permutation (validation, rise in MSE)",0.010420812146804893
+rawprice,XGBoost (Boosting),price_lag20,"permutation (validation, rise in MSE)",-0.008487846740231475
+rawprice,XGBoost (Boosting),ma5,"permutation (validation, rise in MSE)",0.2655346474240797
+rawprice,XGBoost (Boosting),ma10,"permutation (validation, rise in MSE)",0.07466485489197588
+rawprice,XGBoost (Boosting),ma20,"permutation (validation, rise in MSE)",0.13610073352006008
+rawprice,XGBoost (Boosting),open,"permutation (validation, rise in MSE)",0.3017310449734475
+rawprice,XGBoost (Boosting),high,"permutation (validation, rise in MSE)",1.9597326652312574
+rawprice,XGBoost (Boosting),low,"permutation (validation, rise in MSE)",0.534601460305288
+rawprice,XGBoost (Boosting),hl_range,"permutation (validation, rise in MSE)",0.004809993876252539
+rawprice,XGBoost (Boosting),log_ret_lag0,"permutation (validation, rise in MSE)",0.00875438317681596
+rawprice,XGBoost (Boosting),log_ret_lag1,"permutation (validation, rise in MSE)",0.0009048615453719378
+rawprice,XGBoost (Boosting),log_ret_lag2,"permutation (validation, rise in MSE)",0.0016317362651296686
+rawprice,XGBoost (Boosting),log_ret_lag3,"permutation (validation, rise in MSE)",-0.000748738931849513
+rawprice,XGBoost (Boosting),log_ret_lag4,"permutation (validation, rise in MSE)",-0.00018868769333849623
+rawprice,XGBoost (Boosting),volatility_5,"permutation (validation, rise in MSE)",0.005572376025389081
+rawprice,XGBoost (Boosting),volatility_20,"permutation (validation, rise in MSE)",0.003805863909428675
+rawprice,XGBoost (Boosting),log_volume,"permutation (validation, rise in MSE)",0.007970037536405572
+rawprice,XGBoost (Boosting),volume_missing,"permutation (validation, rise in MSE)",0.0
+rawprice,XGBoost (Boosting),volume_over_ma20,"permutation (validation, rise in MSE)",4.4517873826233066e-05
+rawprice,XGBoost (Boosting),change_pct,"permutation (validation, rise in MSE)",0.000415331027257837
+rawprice,XGBoost (Boosting),day_of_week,"permutation (validation, rise in MSE)",0.004807524821447995
+rawprice,XGBoost (Boosting),month,"permutation (validation, rise in MSE)",0.001156189414616793

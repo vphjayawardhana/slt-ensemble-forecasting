@@ -1,0 +1,52 @@
+################ RUN A (first widened-grid run; only metrics, predictions and log survived) vs RUN B (FINAL) ################
+A = logs/run_A_surviving
+B = /home/claude/ml
+
+results files in A: 2 | in B: 16 | compared (present in both): 2
+  metrics_all.csv                                byte-identical = True
+  predictions_validation_test.csv                byte-identical = True
+
+2 of 2 common results files are byte-identical
+only in B: ['feature_importance.csv', 'phase3_verification.txt', 'residual_summary.csv', 'stacking_folds_rawprice.csv', 'stacking_folds_return.csv', 'stacking_weights_rawprice.csv', 'stacking_weights_return.csv', 'summary.json', 'tuning_rawprice_random_forest.csv', 'tuning_rawprice_stacking_ridge_alpha.csv', 'tuning_rawprice_xgboost.csv', 'tuning_return_random_forest.csv', 'tuning_return_stacking_ridge_alpha.csv', 'tuning_return_xgboost.csv']
+
+Models: not compared (one folder has no models/ directory)
+
+Training-log tuning lines A vs B identical apart from runtime lines:
+   True
+
+################ RUN B (FINAL) vs RUN C (independent replicate, separate folder) ################
+A = /home/claude/ml
+B = /home/claude/ml_runC
+
+results files in A: 16 | in B: 15 | compared (present in both): 15
+  feature_importance.csv                         byte-identical = True
+  metrics_all.csv                                byte-identical = True
+  predictions_validation_test.csv                byte-identical = True
+  residual_summary.csv                           byte-identical = True
+  stacking_folds_rawprice.csv                    byte-identical = True
+  stacking_folds_return.csv                      byte-identical = True
+  stacking_weights_rawprice.csv                  byte-identical = True
+  stacking_weights_return.csv                    byte-identical = True
+  summary.json                                   byte-identical = True
+  tuning_rawprice_random_forest.csv              byte-identical = True
+  tuning_rawprice_stacking_ridge_alpha.csv       byte-identical = True
+  tuning_rawprice_xgboost.csv                    byte-identical = True
+  tuning_return_random_forest.csv                byte-identical = True
+  tuning_return_stacking_ridge_alpha.csv         byte-identical = True
+  tuning_return_xgboost.csv                      byte-identical = True
+
+15 of 15 common results files are byte-identical
+only in A: ['phase3_verification.txt']
+
+Models present in both folders:
+  model_registry.json                  byte-identical = False
+  persistence_baseline.joblib          byte-identical = True
+  rawprice_random_forest.joblib        byte-identical = True
+  rawprice_stacking.joblib             byte-identical = True
+  rawprice_xgboost.joblib              byte-identical = True
+  return_random_forest.joblib          byte-identical = True
+  return_stacking.joblib               byte-identical = True
+  return_xgboost.joblib                byte-identical = True
+
+model_registry.json: keys differing between B and C:
+   ['total_runtime_seconds']

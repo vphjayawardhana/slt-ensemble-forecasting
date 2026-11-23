@@ -1,0 +1,15 @@
+# Minimum versions (any compatible newer versions). For the exact versions used for the results use requirements-lock.txt.
+# Python 3.11 on macOS / Apple Silicon; no GPU needed.
+# macOS: XGBoost needs the OpenMP runtime (libomp) - see README section 2.
+pandas>=2.2
+numpy>=1.26
+scipy>=1.11
+scikit-learn>=1.4
+xgboost>=2.0
+matplotlib>=3.8
+joblib>=1.3
+# Phase 4 notebook
+jupyterlab>=4.0
+ipykernel>=6.29
+# Phase 5 dashboard (tested with 1.67.0)
+streamlit>=1.40

@@ -1,0 +1,15 @@
+[PASS] All 7 model files exist and load persistence_baseline.joblib, return_random_forest.joblib, return_xgboost.joblib, return_stacking.joblib, rawprice_random_forest.joblib, rawprice_xgboost.joblib, rawprice_stacking.joblib
+[PASS] [return] stacking folds expand chronologically; each block predicted by models trained only on EARLIER rows 5 folds; first train window 898 rows; OOF rows = 1348 of 2246; fold1 trains to 2013-05-09, predicts 2013-05-10..2014-06-20; last fold predicts to 2019-01-18
+[PASS] [rawprice] stacking folds expand chronologically; each block predicted by models trained only on EARLIER rows 5 folds; first train window 898 rows; OOF rows = 1348 of 2246; fold1 trains to 2013-05-09, predicts 2013-05-10..2014-06-20; last fold predicts to 2019-01-18
+[PASS] Perturbation test: corrupting FUTURE training targets leaves earlier OOF predictions unchanged targets corrupted from row 1437; folds 1-3 identical: True; fold 4 changed (test has teeth): True
+[PASS] Stacking meta-model targets are the TRAIN split's targets only 2246 rows = train rows
+[PASS] Tuning logs hold validation scores only (no test columns) 6 tuning files
+[PASS] All 4 models x 2 approaches predict the same 486 validation + 486 test observations (no gaps) 8 prediction columns
+[PASS] Persistence baseline predicts exactly today's close 
+[PASS] Reconstruction formula holds: price = close_t * exp(predicted log return) for every return-based model 
+[PASS] Saved models reproduce every reported MAE/RMSE/R2 exactly after reloading (no retraining) max abs difference = 8.88e-16
+[PASS] Persistence validation: MAE = mean|price change|; direction accuracy (incl.) = share of unchanged days MAE 0.5247, unchanged share 0.134
+[PASS] Persistence test: MAE = mean|price change|; direction accuracy (incl.) = share of unchanged days MAE 1.3903, unchanged share 0.086
+[PASS] Saved models expect the same feature names/order as the Phase 2 pipeline 
+
+13/13 checks passed

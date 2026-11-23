@@ -1,0 +1,11 @@
+# EXACT versions of the authoritative Mac run (Python 3.11.18, MacBook Air M1). Models in models/ load only with these.
+#   uv pip install -r requirements-lock.txt
+pandas==3.1.1
+numpy==2.4.6
+scipy==1.17.1
+scikit-learn==1.9.1
+xgboost==3.2.0
+matplotlib==3.11.2
+joblib==1.6.0
+# Added after the models were trained; not used for training. Dashboard tested with this exact version in a Linux sandbox.
+streamlit==1.67.0

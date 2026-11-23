@@ -1,0 +1,21 @@
+[PASS] Original CSV unchanged (SHA-256 before == after) c28c98d2e450d0fd...
+[PASS] Truncation test: features at t identical using data up to t only (256 origins incl. all split boundaries) 0 mismatches
+[PASS] Perturbation test: multiplying all future OHLCV by 1000 leaves features at t unchanged (60 origins) 0 mismatches
+[PASS] target_log_return == log(Close[t+1]/Close[t]) for every model-ready row max abs diff = 0.00e+00
+[PASS] Reconstruction close_t * exp(target) == actual next close max abs diff = 1.42e-14 LKR
+[PASS] target_price_next and next_date point to the very next row in the file 
+[PASS] No feature column is named/derived from target or next-row data 
+[PASS] No feature is suspiciously correlated with the target (leak would show |r| ~ 1) top |corr| on train: high_over_close=0.233, close_lag1_ratio=0.223, log_ret_lag0=0.220
+[PASS] Model-ready rows are strictly chronological, no duplicate dates 
+[PASS] Train < validation < test in time, no overlap train ends 2019-01-18 | val 2019-01-21..2021-03-23 | test starts 2021-03-24
+[PASS] Split sizes equal 70/15/15 of the 3,238 labelled rows 2266 / 486 / 486
+[PASS] Volume fill value equals the median of TRAINING rows only train median=6030.0 | median of all rows=7700.0 | val+test median=14240.0
+[PASS] All 18 missing volumes were flagged and kept (indicator column) missing rows are all inside training: True
+[PASS] first validation row (2019-01-21) uses the close from 20 observations earlier (2018-12-19, split=train) 
+[PASS] first test row (2021-03-24) uses the close from 20 observations earlier (2021-02-22, split=validation) 
+[PASS] Only the first 20 warm-up rows and the final unlabelled row were dropped warm-up indices 0..19, no-target index [3238]
+[PASS] No NaN or infinite values in features or target after preprocessing 
+[PASS] All zero-volume rows retained 13 of 13
+[PASS] Largest market moves retained (no clipping) |target|>10% rows in model-ready table: 26; max |target| = 0.2222
+
+19/19 checks passed

@@ -1,0 +1,84 @@
+{
+  "source_csv": "TeleCom_2009_2023_Daily.csv",
+  "source_csv_sha256": "c28c98d2e450d0fd76a8a14eab1dd0d9baeeaf99d118a38116933d4823a47df1",
+  "rows_in_csv": 3239,
+  "rows_model_ready": 3218,
+  "dropped_warmup_rows": 20,
+  "dropped_last_row_without_target": 1,
+  "volume_imputation_value_train_median": 6030.0,
+  "primary_target": "target_log_return = log(Close[t+1] / Close[t])",
+  "price_reconstruction": "predicted_price = close_t * exp(predicted_log_return)",
+  "secondary_target": "target_price_next = Close[t+1]",
+  "feature_columns": [
+    "close_lag1_ratio",
+    "close_lag2_ratio",
+    "close_lag3_ratio",
+    "close_lag5_ratio",
+    "close_lag10_ratio",
+    "close_lag20_ratio",
+    "close_over_ma5",
+    "close_over_ma10",
+    "close_over_ma20",
+    "log_ret_lag0",
+    "log_ret_lag1",
+    "log_ret_lag2",
+    "log_ret_lag3",
+    "log_ret_lag4",
+    "volatility_5",
+    "volatility_20",
+    "open_over_close",
+    "high_over_close",
+    "low_over_close",
+    "hl_range_over_close",
+    "log_volume",
+    "volume_missing",
+    "volume_over_ma20",
+    "change_pct",
+    "day_of_week",
+    "month"
+  ],
+  "splits": {
+    "train": {
+      "rows_before_dropping": 2266,
+      "rows_after_dropping": 2246,
+      "first_date": "2009-08-07",
+      "last_date": "2019-01-18"
+    },
+    "validation": {
+      "rows_before_dropping": 486,
+      "rows_after_dropping": 486,
+      "first_date": "2019-01-21",
+      "last_date": "2021-03-23"
+    },
+    "test": {
+      "rows_before_dropping": 486,
+      "rows_after_dropping": 486,
+      "first_date": "2021-03-24",
+      "last_date": "2023-04-11"
+    }
+  },
+  "data_quality": {
+    "rows": 3239,
+    "first_date": "2009-07-08",
+    "last_date": "2023-04-12",
+    "raw_missing_per_column": {
+      "Date": 0,
+      "Price": 0,
+      "Open": 0,
+      "High": 0,
+      "Low": 0,
+      "Vol.": 18,
+      "Change %": 0
+    },
+    "duplicate_rows": 0,
+    "duplicate_dates": 0,
+    "zero_volume_rows": 13,
+    "high_below_low": 0,
+    "high_below_open_or_close": 0,
+    "low_above_open_or_close": 0,
+    "abs_log_return_gt_10pct": 26,
+    "log_return_iqr_outliers_1.5x": 216,
+    "largest_calendar_gap_days": 52,
+    "outlier_policy": "inspected only; genuine market outliers and zero-volume rows are KEPT"
+  }
+}

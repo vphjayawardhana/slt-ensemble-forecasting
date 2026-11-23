@@ -1,0 +1,38 @@
+FINAL (ml/)  vs  INDEPENDENT PYTHON 3.11 REPLICATE (separate folder, same code, same locked package versions)
+(note: phase3_verification.txt and figures/ exist only in the final folder: they are written by verify_phase3.py / make_plots.py, not by training)
+
+A = /home/claude/ml
+B = /home/claude/ml_py311b
+
+results files in A: 16 | in B: 15 | compared (present in both): 15
+  feature_importance.csv                         byte-identical = True
+  metrics_all.csv                                byte-identical = True
+  predictions_validation_test.csv                byte-identical = True
+  residual_summary.csv                           byte-identical = True
+  stacking_folds_rawprice.csv                    byte-identical = True
+  stacking_folds_return.csv                      byte-identical = True
+  stacking_weights_rawprice.csv                  byte-identical = True
+  stacking_weights_return.csv                    byte-identical = True
+  summary.json                                   byte-identical = True
+  tuning_rawprice_random_forest.csv              byte-identical = True
+  tuning_rawprice_stacking_ridge_alpha.csv       byte-identical = True
+  tuning_rawprice_xgboost.csv                    byte-identical = True
+  tuning_return_random_forest.csv                byte-identical = True
+  tuning_return_stacking_ridge_alpha.csv         byte-identical = True
+  tuning_return_xgboost.csv                      byte-identical = True
+
+15 of 15 common results files are byte-identical
+only in A: ['phase3_verification.txt']
+
+Models present in both folders:
+  model_registry.json                  byte-identical = False
+  persistence_baseline.joblib          byte-identical = True
+  rawprice_random_forest.joblib        byte-identical = True
+  rawprice_stacking.joblib             byte-identical = True
+  rawprice_xgboost.joblib              byte-identical = True
+  return_random_forest.joblib          byte-identical = True
+  return_stacking.joblib               byte-identical = True
+  return_xgboost.joblib                byte-identical = True
+
+model_registry.json keys differing:
+   ['total_runtime_seconds']

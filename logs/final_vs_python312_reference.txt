@@ -1,0 +1,27 @@
+FINAL RUN (Python 3.11.15; pandas 3.1.1, numpy 2.4.6, scipy 1.17.1, scikit-learn 1.9.1, xgboost 3.2.0)  vs  REFERENCE RUN B (Python 3.12.3; pandas 3.0.6, numpy 2.5.4, scipy 1.18.1, scikit-learn 1.9.1, xgboost 3.4.1)
+(A = final, B = reference.  Differences are expected: different library versions.)
+
+A = /home/claude/ml
+B = /home/claude/ml/reference_runs/python312_run_B
+
+results files in A: 16 | in B: 16 | compared (present in both): 16
+  feature_importance.csv                         byte-identical = False -> same shape (212, 5); max abs numeric difference = 1.561e+00; text columns identical = True
+  metrics_all.csv                                byte-identical = False -> same shape (16, 13); max abs numeric difference = 3.872e+01; text columns identical = True
+  phase3_verification.txt                        byte-identical = False -> content differs
+  predictions_validation_test.csv                byte-identical = False -> same shape (972, 18); max abs numeric difference = 3.292e+00; text columns identical = True
+  residual_summary.csv                           byte-identical = False -> same shape (16, 11); max abs numeric difference = 2.244e+00; text columns identical = True
+  stacking_folds_rawprice.csv                    byte-identical = True
+  stacking_folds_return.csv                      byte-identical = True
+  stacking_weights_rawprice.csv                  byte-identical = False -> same shape (2, 4); max abs numeric difference = 4.831e-01; text columns identical = True
+  stacking_weights_return.csv                    byte-identical = False -> same shape (2, 4); max abs numeric difference = 7.736e-02; text columns identical = True
+  summary.json                                   byte-identical = False -> content differs
+  tuning_rawprice_random_forest.csv              byte-identical = True
+  tuning_rawprice_stacking_ridge_alpha.csv       byte-identical = False -> same shape (9, 3); max abs numeric difference = 9.999e+01; text columns identical = True
+  tuning_rawprice_xgboost.csv                    byte-identical = False -> same shape (288, 6); max abs numeric difference = 1.550e+03; text columns identical = True
+  tuning_return_random_forest.csv                byte-identical = False -> same shape (80, 6); max abs numeric difference = 4.000e+01; text columns identical = True
+  tuning_return_stacking_ridge_alpha.csv         byte-identical = False -> same shape (9, 3); max abs numeric difference = 9.999e+01; text columns identical = True
+  tuning_return_xgboost.csv                      byte-identical = False -> same shape (288, 6); max abs numeric difference = 1.550e+03; text columns identical = True
+
+3 of 16 common results files are byte-identical
+
+Models: not compared (one folder has no models/ directory)

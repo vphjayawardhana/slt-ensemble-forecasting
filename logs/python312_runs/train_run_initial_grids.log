@@ -1,0 +1,21 @@
+rows: {'train': 2246, 'validation': 486, 'test': 486}
+
+=== Approach: return | train=2246 val=486 test=486 | features=26
+  tuning Random Forest on validation ...
+   best RF : {'max_depth': 10, 'min_samples_leaf': 80, 'max_features': 1.0, 'n_estimators': 300} | val RMSE 0.7868
+  tuning XGBoost on validation ...
+   best XGB: {'max_depth': 2, 'learning_rate': 0.03, 'min_child_weight': 1, 'n_estimators': 400} | val RMSE 0.7756
+  building walk-forward out-of-fold predictions for stacking ...
+   best Ridge alpha: 1000.0 | val RMSE 0.7796
+  approach 'return' finished in 97s
+
+=== Approach: rawprice | train=2246 val=486 test=486 | features=27
+  tuning Random Forest on validation ...
+   best RF : {'max_depth': 10, 'min_samples_leaf': 10, 'max_features': 0.33, 'n_estimators': 300} | val RMSE 0.9374
+  tuning XGBoost on validation ...
+   best XGB: {'max_depth': 3, 'learning_rate': 0.01, 'min_child_weight': 30, 'n_estimators': 800} | val RMSE 0.8604
+  building walk-forward out-of-fold predictions for stacking ...
+   best Ridge alpha: 1000.0 | val RMSE 1.0248
+  approach 'rawprice' finished in 87s
+
+Done in 186s. Models -> /home/claude/ml/models, results -> /home/claude/ml/results
